@@ -3,6 +3,8 @@
 // Object oriented representation
 // JS can be used to read/write/manipulate to the DOM
 
+// *** PART 1 *** //
+
 // EXAMINE THE DOCUMENT OBJECT
 
 // console.dir(document); // Shows an interactive list of all the properties of the specified object
@@ -22,7 +24,6 @@
 
 // 1. GET ELEMENT BY ID
 
-// console.log(document.getElementById("header-title"));
 // var headerTitle = document.getElementById("header-title");
 // var header = document.getElementById("main-header");
 // console.log(headerTitle);
@@ -87,3 +88,84 @@
 // for (let i = 0; i < even.length; i++) {
 //   even[i].style.backgroundColor = "#f00";
 // }
+
+// *** PART 2 *** //
+
+// TRAVERSING THE DOM
+// parentNode
+// var itemList = document.querySelector("#items");
+// console.log(itemList.parentNode);
+
+// itemList.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentNode.parentNode);
+
+// parentElement
+// parentNode
+// var itemList = document.querySelector("#items");
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentElement.parentElement);
+
+// childNodes
+// console.log(itemList.childNodes); // Not suggested
+
+// children
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = "#f4f4f4";
+
+// firstChild
+// console.log(itemList.firstChild);
+
+// firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = "Hello1";
+
+// lastChild
+// console.log(itemList.lastChild);
+
+// lastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = "Hello1";
+
+// nextSibling
+// console.log(itemList.nextSibling);
+
+// nextElementSibling
+// console.log(itemList.nextElementSibling);
+
+// previousSibling
+// console.log(itemList.previousSibling);
+
+// previousElementSibling
+// console.log(itemList.previousElementSibling);
+
+// CREATE ELEMENTS
+// createElement
+// let newDiv = document.createElement("div");
+
+// // Add class
+// newDiv.className = "hello";
+
+// // Add ID
+// newDiv.id = "hello1";
+
+// // Add attribute
+// newDiv.setAttribute("title", "Hello world");
+
+// // Create text node
+// let newDivText = document.createTextNode("Hello new div!");
+
+// // Add text to div
+// newDiv.appendChild(newDivText);
+
+// let container = document.querySelector("header .container");
+// let h1 = document.querySelector("header .container h1");
+
+// newDiv.style.fontSize = "32px";
+// newDiv.style.fontWeight = "bold";
+
+// // Insert div
+// container.insertBefore(newDiv, h1);
+
+// console.log(newDiv);
