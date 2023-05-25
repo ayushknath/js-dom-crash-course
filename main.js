@@ -169,3 +169,64 @@
 // container.insertBefore(newDiv, h1);
 
 // console.log(newDiv);
+
+// *** PART 3 *** //
+// let button = document.getElementById("button");
+
+// button.addEventListener("click", runEvent);
+// button.addEventListener("dblclick", runEvent);
+// button.addEventListener("mousedown", runEvent);
+// button.addEventListener("mouseup", runEvent);
+
+// function buttonClick(e) {
+// console.log(e);
+// console.log(e.target);
+// console.log(e.target.id);
+// console.log(e.target.className);
+// console.log(e.target.classList);
+// let output = document.getElementById("output");
+// output.innerHTML = "<h3>" + e.target.id + "</h3>";
+// console.log(e.type);
+// output.textContent = `X: ${e.clientX} Y: ${e.clientY}`;
+// output.textContent = `X: ${e.offsetX} Y: ${e.offsetY}`;
+// console.log(e.altKey);
+// console.log(e.ctrlKey);
+// console.log(e.shiftKey);
+// }
+
+// let button = document.getElementById("button");
+
+// let box = document.getElementById("box");
+
+// // box.addEventListener("mouseenter", runEvent);
+// // box.addEventListener("mouseleave", runEvent);
+// // box.addEventListener("mouseover", runEvent);
+// // box.addEventListener("mouseout", runEvent);
+// box.addEventListener("mousemove", runEvent);
+
+// function runEvent(e) {
+//   console.log(`Event type: ${e.type}`);
+
+//   let output = document.getElementById("output");
+//   // output.textContent = `X: ${e.offsetX} Y: ${e.offsetY}`;
+//   box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+// }
+
+// keyup
+// keydown
+// keypress
+
+// focus
+// blur
+
+// cut
+// paste
+
+// submit
+// let form = document.querySelector("form");
+// form.addEventListener("submit", runEvent);
+
+// function runEvent(e) {
+//   e.preventDefault();
+//   console.log(`Event type: ${e.type}`);
+// }
